@@ -223,7 +223,7 @@ class LenderApi extends Controller
         'firstname'          => 'nullable|string',
         'lastname'           => 'nullable|string',
         'email'              => 'nullable|email',
-        'phone_number'       => 'nullable|string',
+        'phone_number'       => 'nullable',
         
         'profile_path'       => 'nullable|string',
         'province'           => 'nullable|string',

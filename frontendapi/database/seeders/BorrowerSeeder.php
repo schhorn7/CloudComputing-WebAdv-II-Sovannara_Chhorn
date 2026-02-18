@@ -28,7 +28,6 @@ class BorrowerSeeder extends Seeder
                 'approval_status' => 'Approved',
                 'identity_path' => '/storage/uploads/kJs68eI60Yz6T4mqpRkQtyeF8HICxg9ZAORCz5kf.jpg',
                 'employment_path' => '/storage/uploads/oEXwrIyAYI6W4Ecojf1iifxCGqjnSUOwFsKUyPmF.png',
-                'profile_picture' => '/storage/uploads/OmzyXJXq89m61J9ojcAc3umRXwzslTUkFYkG8Fb4.jpg',
                 'country' => 'Cambodia',
                 'province' => 'Kandal',
                 // 'balance' => fake()->randomFloat(2, 0, 5000),

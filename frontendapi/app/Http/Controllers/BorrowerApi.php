@@ -327,7 +327,7 @@ class BorrowerApi extends Controller
         'firstname'          => 'nullable|string',
         'lastname'           => 'nullable|string',
         'email'              => 'nullable|email',
-        'phone_number'       => 'nullable|string',
+        'phone_number'       => 'nullable',
         'income'             => 'nullable|numeric',
         'employment_status'  => 'nullable|string',
         'profile_path'       => 'nullable|string',
