@@ -85,8 +85,8 @@
                             creditRecord.status === 'Active'
                               ? 'bg-green-100 text-green-800'
                               : creditRecord.status === 'Completed'
-                              ? 'bg-blue-100 text-blue-800'
-                              : 'bg-red-100 text-red-800',
+                                ? 'bg-blue-100 text-blue-800'
+                                : 'bg-red-100 text-red-800',
                           ]"
                         >
                           <strong>{{ creditRecord.status }}</strong>
@@ -272,12 +272,12 @@ const id = ref();
 onMounted(async () => {
   try {
     const res = await $fetch(
-      `${config.public.apiBase}/getLoan/${route.params.loanId}`,
+      `${config.public.apiBase}/getLoan/${route.params.loanid}`,
       {
         headers: {
           Authorization: `Bearer ${token.value}`,
         },
-      }
+      },
     );
 
     if (res) {
@@ -299,7 +299,7 @@ onMounted(async () => {
         headers: {
           Authorization: `Bearer ${token.value}`,
         },
-      }
+      },
     );
     if (res1 && res1.loan) {
       creditRecords.value = res1.loan;
